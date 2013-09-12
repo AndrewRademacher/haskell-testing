@@ -1,0 +1,6 @@
+*.log
+*.tix
+*.mix
+*.swp
+*.o
+*.hi
