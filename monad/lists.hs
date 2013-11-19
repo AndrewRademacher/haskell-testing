@@ -2,42 +2,42 @@
 --	Define Data Model
 
 data Broker = Broker {
-	bName	:: String,
-	clients	:: [Client]
+    bName   :: String,
+    clients :: [Client]
 } deriving (Eq, Show)
 
 data Client = Client {
-	cName		:: String,
-	investments	:: [Investment]
+    cName       :: String,
+    investments :: [Investment]
 } deriving (Eq, Show)
 
 data Investment = Investment {
-	iName	:: String,
-	markets	:: [Market]
+    iName   :: String,
+    markets :: [Market]
 } deriving (Eq, Show)
 
 data Market = Market {
-	mName	:: String,
-	balance	:: Integer
+    mName   :: String,
+    balance :: Integer
 } deriving (Eq, Show)
 
 --	Sample Data
 
 colin = Broker {
-	bName = "Colin",
-	clients = [Client {
-		cName = "Fred",
-		investments = [
-			Investment {
-				iName = "Shares",
-				markets = [(Market "Japan" 7000), (Market "America" 8888)]	
-			},
-			Investment {
-				iName = "Gold",
-				markets = [(Market "China" 3333)]
-			}
-		]
-	}]
+    bName = "Colin",
+    clients = [Client {
+        cName = "Fred",
+        investments = [
+            Investment {
+                iName = "Shares",
+                markets = [(Market "Japan" 7000), (Market "America" 8888)]	
+            },
+            Investment {
+                iName = "Gold",
+                markets = [(Market "China" 3333)]
+            }
+        ]
+    }]
 }
 
 -- Implementation
