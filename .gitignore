@@ -8,4 +8,4 @@
 **/cabal.sandbox.config
 **/.cabal-sandbox/
 **/dist/
-
+db/acid-test/state/
